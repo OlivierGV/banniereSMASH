@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannière pour l'événement Smash Bros</title>
+</head>
+<body>
+    <div class="images">
+        <img id="monImage" src="1.png">
+    </div>
+    <script>
+        function changerImage() {
+            var image = document.getElementById('monImage');
+            var cheminAbsolu = image.src;
+            var nomFichier = cheminAbsolu.substring(cheminAbsolu.lastIndexOf('/') + 1);
+            
+            if (nomFichier === "1.png") {
+                image.src = "2.png";
+            }
+            if (nomFichier === "2.png") {
+                image.src = "3.png";
+            }
+            if (nomFichier === "3.png") {
+                image.src = "4.png";
+            }
+            if (nomFichier === "4.png") {
+                image.src = "5.png";
+            }
+            if (nomFichier === "5.png") {
+                image.src = "6.png";
+            }
+            if (nomFichier === "6.png") {
+                image.src = "7.png";
+            }
+            if (nomFichier === "7.png") {
+                image.src = "1.png";
+            }
+        }
+        
+        setInterval(changerImage, 3000);
+        </script>
+</body>
+</html>
